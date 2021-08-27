@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="設定"
+        android:textSize="40dp"
+         />
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/medium_gray"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="基礎設定"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+        <Button
+            android:id="@+id/setting_to_MPD"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="更改基本資料"
+            android:textColor="@color/deep_gray"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:drawableLeft="@drawable/ic_lock_24"
+            android:drawableRight="@drawable/ic_arrow_24"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <Button
+                android:id="@+id/setting_to_NS"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="通知設定"
+                android:textColor="@color/deep_gray"
+                android:textSize="25dp"
+                android:gravity="left"
+                android:drawableLeft="@drawable/ic_bell_24"
+                android:drawableRight="@drawable/ic_arrow_24"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/medium_gray"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="日曆設定"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <Button
+                android:id="@+id/setting_to_SD"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="個人化刪除"
+                android:textColor="@color/deep_gray"
+                android:textSize="25dp"
+                android:gravity="left"
+                android:drawableLeft="@drawable/ic_delete_24"
+                android:drawableRight="@drawable/ic_arrow_24"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="只會刪除私人行程"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <Button
+                android:id="@+id/setting_to_ResetAll"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="重置日曆"
+                android:textColor="@color/deep_gray"
+                android:textSize="25dp"
+                android:gravity="left"
+                android:drawableLeft="@drawable/ic_reset_24"
+                android:drawableRight="@drawable/ic_arrow_24"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="刪除所有行程 包含所有工作及課程"/>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/medium_gray"/>
+
+        <Button
+            android:id="@+id/setting_to_Logout"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登出"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/white"/>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
